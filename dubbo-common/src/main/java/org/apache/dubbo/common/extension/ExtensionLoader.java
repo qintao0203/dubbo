@@ -598,6 +598,11 @@ public class ExtensionLoader<T> {
         return (T) instance;
     }
 
+    /**
+     *
+     * @param name
+     * @return
+     */
     private IllegalStateException findException(String name) {
         for (Map.Entry<String, IllegalStateException> entry : exceptions.entrySet()) {
             if (entry.getKey().toLowerCase().contains(name.toLowerCase())) {
